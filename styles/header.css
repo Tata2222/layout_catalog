@@ -1,0 +1,54 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 0 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+@media screen and (min-width: 1025px) {
+  header {
+    width: 1200px; } }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .nav__list .nav__link {
+    padding: 15px 10px;
+    line-height: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    display: block;
+    font-weight: 500;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative; }
+    .nav__list .nav__link:hover, .nav__list .nav__link.is-active {
+      color: #00acdc; }
+    .nav__list .nav__link.is-active:after {
+      content: "";
+      left: 10px;
+      background: #00acdc;
+      border-radius: 8px;
+      width: calc(100% - 20px);
+      display: block;
+      position: absolute;
+      height: 4px;
+      bottom: 0; }
+
+/*# sourceMappingURL=header.css.map */
