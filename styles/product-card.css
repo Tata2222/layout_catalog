@@ -1,5 +1,11 @@
 .product-card {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 200px;
   height: 403px;
   background: #fff;
@@ -14,7 +20,7 @@
     width: 160px;
     border: 3px solid transparent;
     padding-top: 13px;
-    margin: auto;
+    margin: 0 auto;
     -webkit-transition: -webkit-transform 1s ease-in-out;
     transition: -webkit-transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
@@ -27,16 +33,13 @@
   .product-card__img {
     width: 100%; }
   .product-card__content {
-    margin-top: 45px; }
+    margin-top: 42px; }
   .product-card__title {
     font-size: 12px;
-    line-height: 15px;
     font-weight: 500;
-    margin-bottom: 6px; }
+    line-height: 15px;
+    margin-bottom: 5px; }
   .product-card__id {
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 12px;
     margin-bottom: 15px; }
   .product-card__review {
     display: -webkit-box;
@@ -49,27 +52,27 @@
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 20px; }
+  .product-card__info {
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: color  0.3s ease-in;
+    transition: color  0.3s ease-in; }
+    .product-card__info:hover {
+      color: #00acdc; }
   .product-card__price-panel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     margin-bottom: 20px; }
   .product-card__price-value {
-    display: inline-block;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
-    width: 100%;
-    text-align: right; }
-  .product-card__price-name {
-    display: inline-block;
-    font-size: 11px;
     line-height: 19px; }
   .product-card__btn {
     display: -webkit-box;
@@ -92,7 +95,7 @@
     color: #fff;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: background 0.3s ease-in, color  0.3s ease-in;
