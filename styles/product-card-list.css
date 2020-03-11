@@ -1,9 +1,9 @@
 .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 944px;
+  grid-template-columns: repeat(4, 200px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 1024px;
   grid-gap: 50px 48px;
   list-style: none;
